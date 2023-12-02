@@ -6,7 +6,7 @@ using static Gtec.UnityInterface.BCIManager;
 using System;
 using Gtec.UnityInterface;
 
-public class TaskTarget : MonoBehaviour
+public class ClassificationScript : MonoBehaviour
 {
     //[SerializeField]
     //[Tooltip("The material to use when the target is selected")]
@@ -23,6 +23,7 @@ public class TaskTarget : MonoBehaviour
     public uint _selectedClass;
     public void Start()
     {
+        //Debug.Log("dsadsa");
         BCIManager.Instance.ClassSelectionAvailable += OnClassSelectionAvailable;
         UdpController = FindObjectOfType<UdpController>();
 
@@ -85,13 +86,12 @@ public class TaskTarget : MonoBehaviour
     {
         ClassSelectionAvailableEventArgs ea = (ClassSelectionAvailableEventArgs)e;
         _selectedClass = ea.Class;
-        UdpController.SendData((int)_selectedClass);
-
-        //Debug.Log(_selectedClass);
         _update = true;
-        if (ea.Class != 0)
+        Debug.Log(string.Format("Selected class: {0}", ea.Class));
+
+        if ((int)_selectedClass != 0)
         {
-            Debug.Log(string.Format("Selected class: {0}", ea.Class));
+            UdpController.SendData((int)_selectedClass);
         }
     }
 
