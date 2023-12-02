@@ -7,5 +7,5 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/TransparentOverlay.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    guid: aea91fa0983824745bc471ab1cb1b48b
   m_configObjects: {}
