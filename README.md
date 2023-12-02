@@ -1,0 +1,3 @@
+# NervCon
+
+BCI virtual controller.
