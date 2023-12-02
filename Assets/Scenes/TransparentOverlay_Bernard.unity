@@ -362,12 +362,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
+      propertyPath: FlashtimeMs
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
       propertyPath: NumberOfClasses
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
       propertyPath: _numberOfClasses
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
+      propertyPath: NumberOfTrainingTrials
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
       propertyPath: TrainingObject.ClassId
@@ -1994,8 +2002,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d760529e7b4dca9408289dc68defc9fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  remoteIP: 127.0.0.1
-  remotePort: 12345
 --- !u!4 &1978103675
 Transform:
   m_ObjectHideFlags: 0

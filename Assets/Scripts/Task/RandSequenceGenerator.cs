@@ -68,43 +68,43 @@ public class RandSequenceGenerator : MonoBehaviour
         }
     }
 
-    public void SelectNext(int classID)
-    {
-        if(classID == 0)
-        {
-            classID = Random.Range(1, SpawnTargets.Count + 1);
-            Debug.LogWarning("Selected in Debug Mode! Generating random Class ID: " + classID);
-        }
+    //public void SelectNext(int classID)
+    //{
+    //    if(classID == 0)
+    //    {
+    //        classID = Random.Range(1, SpawnTargets.Count + 1);
+    //        Debug.LogWarning("Selected in Debug Mode! Generating random Class ID: " + classID);
+    //    }
 
-        if(_sequence == null || _sequence.Count == 0)
-        {
-            Debug.LogError("No sequence generated.");
-            return;
-        } 
+    //    if(_sequence == null || _sequence.Count == 0)
+    //    {
+    //        Debug.LogError("No sequence generated.");
+    //        return;
+    //    } 
 
-        List<TaskTarget> taskTargets = new List<TaskTarget>();
-        foreach(GameObject obj in _sequence)
-        {
-            taskTargets.Add(obj.GetComponent<TaskTarget>());
-        }
-        // Iterate through the sequence and select objects from left to right
-        foreach(TaskTarget target in taskTargets)
-        {
-            if(!target._isSelected)
-            {
-                target.ActivateTarget(classID);
-                if(classID == target._classID)
-                {
-                    _countSuccess++;
-                    Debug.Log("Correct! Remaining: " + (_sequence.Count - _countSuccess));
-                } else
-                {
-                    Debug.Log("Wrong! Remaining: " + (_sequence.Count - _countSuccess));
-                }
-                break;
-            }
-        }
-    }
+    //    List<TaskTarget> taskTargets = new List<TaskTarget>();
+    //    foreach(GameObject obj in _sequence)
+    //    {
+    //        taskTargets.Add(obj.GetComponent<TaskTarget>());
+    //    }
+    //    // Iterate through the sequence and select objects from left to right
+    //    foreach(TaskTarget target in taskTargets)
+    //    {
+    //        if(!target._isSelected)
+    //        {
+    //            //target.ActivateTarget(classID);
+    //            if(classID == target._classID)
+    //            {
+    //                _countSuccess++;
+    //                Debug.Log("Correct! Remaining: " + (_sequence.Count - _countSuccess));
+    //            } else
+    //            {
+    //                Debug.Log("Wrong! Remaining: " + (_sequence.Count - _countSuccess));
+    //            }
+    //            break;
+    //        }
+    //    }
+    //}
 
     /// <summary>
     /// Clears the current sequence.

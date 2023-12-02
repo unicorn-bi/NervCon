@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class SendDataExample : MonoBehaviour
 {
-    private JsonUdpController jsonUdpController;
+    //private JsonUdpController jsonUdpController;
     private JsonStructure data;
     private bool send = false;
     void Start()
     {
-        jsonUdpController = FindObjectOfType<JsonUdpController>(); // Find the JsonUdpController in the scene
+        //jsonUdpController = FindObjectOfType<JsonUdpController>(); // Find the JsonUdpController in the scene
 
         data = new JsonStructure
         {
@@ -27,7 +27,7 @@ public class SendDataExample : MonoBehaviour
         if (!send)
         {
             Debug.Log("Send USD");
-            jsonUdpController.SendData(data);
+            //jsonUdpController.SendData(data);
             send = true;
         }
     }
