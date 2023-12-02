@@ -1,6 +1,0 @@
-#name: raw data
-#device: UH-2023.00.17
-#eegchannels: 4
-#triggerchannels: 6
-#samplingrate: 250
-Channel 1,Channel 2,Channel 3,Channel 4,trigger,id,target,nontarget,trial,islast
