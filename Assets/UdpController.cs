@@ -8,20 +8,28 @@ public class UdpController : MonoBehaviour
     private UDPSender udpSender;
 
     private string remoteIP = "127.0.0.1"; 
-    private string remotePort = "5000";        
+    private string remotePort = "5000";
+    public bool isOpen = false;
 
     void Start()
     {
         udpSender = new UDPSender(); // Initialize UDP client
-        udpSender.Open(remoteIP, remotePort);
-        //SendData(1);
+        //OpenChannel();
+    }
 
+    public void OpenChannel()
+    {
+        udpSender.Open(remoteIP, remotePort);
+        isOpen = true;
     }
 
     // Method to send any serializable object as JSON over UDP
-    public void SendData(string selectedCommang)
+    public void SendData(string selectedCommand)
     {
-        udpSender.Send(selectedCommang);
+        if(isOpen)
+        {
+            udpSender.Send(selectedCommand);
+        }
     }
 
     void OnDestroy()
