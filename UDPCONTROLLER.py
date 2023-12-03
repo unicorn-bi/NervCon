@@ -21,7 +21,7 @@ def main():
                 # Simulate pressing a key corresponding to the received value
                 keyboard.press(value)
                 # Keep the key pressed for 350 milliseconds
-                time.sleep(0.19)
+                time.sleep(0.3)
 
                 # Release the key
                 keyboard.release(value)

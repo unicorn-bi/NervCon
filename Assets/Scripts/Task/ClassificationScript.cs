@@ -79,7 +79,7 @@ public class ClassificationScript : MonoBehaviour
 
         if ((int)_selectedClass != 0)
         {
-            Debug.Log(string.Format("Send command usp: {0}", idToControlCommand[(int)_selectedClass - 1]));
+            //Debug.Log(string.Format("Send command usp: {0}", idToControlCommand[(int)_selectedClass - 1]));
 
             UdpController.SendData(idToControlCommand[(int)_selectedClass-1]);
         }
