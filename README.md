@@ -21,7 +21,7 @@ providing a user-friendly and drag-and-drop customizable interface for connectin
 ## Screenshots
 ![Example2](presentation/Picture3.png)
 
-![Example3](presetation/Picture4.png)
+![Example3](presentation/Picture4.png)
 
 
 ## Getting Started
