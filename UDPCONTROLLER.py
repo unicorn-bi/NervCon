@@ -22,7 +22,7 @@ def main():
                 key_to_press = str(value)
                 keyboard.press(key_to_press)
                 # Keep the key pressed for 350 milliseconds
-                time.sleep(0.4)
+                time.sleep(0.19)
 
                 # Release the key
                 keyboard.release(key_to_press)
