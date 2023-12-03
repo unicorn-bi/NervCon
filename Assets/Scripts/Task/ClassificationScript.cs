@@ -8,6 +8,7 @@ using Gtec.UnityInterface;
 
 public class ClassificationScript : MonoBehaviour
 {
+    public Dictionary<int, string> idToControlCommand;
     //[SerializeField]
     //[Tooltip("The material to use when the target is selected")]
     //Material _correctSelectionMaterial;
@@ -31,6 +32,12 @@ public class ClassificationScript : MonoBehaviour
         {
             id.SetActive(false);
         }
+
+        idToControlCommand = new Dictionary<int, string>();
+        idToControlCommand[0] = "a";
+        idToControlCommand[1] = "b";
+        idToControlCommand[2] = "x";
+        idToControlCommand[3] = "y";
     }
 
     public void Update()
@@ -62,25 +69,6 @@ public class ClassificationScript : MonoBehaviour
             _update = false;
         }
     }
-    //public void ActivateTarget(int selectedClass)
-    //{
-    //    Debug.Log("Called");
-    //    UdpController.SendData(selectedClass);
-
-    //    if (!_isSelected)
-    //    {
-    //        UdpController.SendData(selectedClass);
-    //        if (selectedClass == _classID)
-    //        {
-    //            GetComponent<Renderer>().material = _correctSelectionMaterial;
-    //            _isSelected = true;
-    //        }
-    //        else
-    //        {
-    //            GetComponent<Renderer>().material = _wrongSelectionMaterial;
-    //        }
-    //    }
-    //}
 
     private void OnClassSelectionAvailable(object sender, EventArgs e)
     {
@@ -91,7 +79,9 @@ public class ClassificationScript : MonoBehaviour
 
         if ((int)_selectedClass != 0)
         {
-            UdpController.SendData((int)_selectedClass);
+            Debug.Log(string.Format("Send command usp: {0}", idToControlCommand[(int)_selectedClass - 1]));
+
+            UdpController.SendData(idToControlCommand[(int)_selectedClass-1]);
         }
     }
 

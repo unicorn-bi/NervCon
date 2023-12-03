@@ -51,12 +51,11 @@ namespace UDP
             }
         }
 
-        public void Send(int number)
+        public void Send(string command)
         {
             if (_socket != null)
             {
-                string data = number.ToString();
-                byte[] bytearray = _encoding.GetBytes(data);
+                byte[] bytearray = _encoding.GetBytes(command);
                 _socket.SendTo(bytearray, _endPoint);
             }
         }

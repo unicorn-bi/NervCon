@@ -19,9 +19,9 @@ public class UdpController : MonoBehaviour
     }
 
     // Method to send any serializable object as JSON over UDP
-    public void SendData(int selectedId)
+    public void SendData(string selectedCommang)
     {
-        udpSender.Send(selectedId);
+        udpSender.Send(selectedCommang);
     }
 
     void OnDestroy()

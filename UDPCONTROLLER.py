@@ -11,22 +11,21 @@ def main():
         while True:
             # Receive data from the UDP port
             data, addr = udp_socket.recvfrom(1024)
-            value = int(data.decode('utf-8'))
+            value = data.decode('utf-8')
 
             # Print the received value
             print(f"Received value: {value}")
 
             # Perform actions based on the received value
-            if 1 <= value <= 9:
+            if value != "":
                 # Simulate pressing a key corresponding to the received value
-                key_to_press = str(value)
-                keyboard.press(key_to_press)
+                keyboard.press(value)
                 # Keep the key pressed for 350 milliseconds
                 time.sleep(0.19)
 
                 # Release the key
-                keyboard.release(key_to_press)
-                print(f"Pressed key: {key_to_press}")
+                keyboard.release(value)
+                print(f"Pressed key: {value}")
 
     except KeyboardInterrupt:
         print("Stopping the UDP listener.")
