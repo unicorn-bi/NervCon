@@ -500,7 +500,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d27ce84bec298ad4a99a30996f9509e6, type: 2}
     - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
       propertyPath: ApplicationObjects.Array.size
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
       propertyPath: ApplicationObjects.Array.data[0].ClassId
@@ -520,15 +520,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
       propertyPath: ApplicationObjects.Array.data[4].ClassId
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
       propertyPath: ApplicationObjects.Array.data[5].ClassId
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
       propertyPath: ApplicationObjects.Array.data[6].ClassId
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
       propertyPath: ApplicationObjects.Array.data[7].ClassId
@@ -537,31 +537,31 @@ PrefabInstance:
     - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
       propertyPath: ApplicationObjects.Array.data[0].GameObject
       value: 
-      objectReference: {fileID: 8310518053712049645}
+      objectReference: {fileID: 8881084794386203942}
     - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
       propertyPath: ApplicationObjects.Array.data[1].GameObject
       value: 
-      objectReference: {fileID: 8881084794386203942}
+      objectReference: {fileID: 5722284722271303388}
     - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
       propertyPath: ApplicationObjects.Array.data[2].GameObject
       value: 
-      objectReference: {fileID: 7547223005649413239}
+      objectReference: {fileID: 5799648662837059094}
     - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
       propertyPath: ApplicationObjects.Array.data[3].GameObject
       value: 
-      objectReference: {fileID: 5722284722271303388}
+      objectReference: {fileID: 8868057731516872090}
     - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
       propertyPath: ApplicationObjects.Array.data[4].GameObject
       value: 
-      objectReference: {fileID: 6298344237511751159}
+      objectReference: {fileID: 8868057731516872090}
     - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
       propertyPath: ApplicationObjects.Array.data[5].GameObject
       value: 
-      objectReference: {fileID: 5799648662837059094}
+      objectReference: {fileID: 8868057731516872090}
     - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
       propertyPath: ApplicationObjects.Array.data[6].GameObject
       value: 
-      objectReference: {fileID: 8684890506759781534}
+      objectReference: {fileID: 8868057731516872090}
     - target: {fileID: 2093703288349499577, guid: bb30f7f5d3b88c4439e1c2af6728019c, type: 3}
       propertyPath: ApplicationObjects.Array.data[7].GameObject
       value: 
@@ -1525,13 +1525,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _update: 0
   selectedIds:
-  - {fileID: 2076685027}
   - {fileID: 1039413463}
-  - {fileID: 1680647897}
   - {fileID: 1367904653}
-  - {fileID: 1408409850}
   - {fileID: 358189824}
-  - {fileID: 238515417}
   - {fileID: 1851150575}
   _selectedClass: 0
 --- !u!4 &913299684
@@ -4815,7 +4811,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &6466301236358217887
 GameObject:
   m_ObjectHideFlags: 0
@@ -4938,7 +4934,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &7728543471570720596
 GameObject:
   m_ObjectHideFlags: 0
@@ -5073,7 +5069,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &8530122004999217825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5126,7 +5122,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &8868057731516872090
 GameObject:
   m_ObjectHideFlags: 0
