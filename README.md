@@ -7,6 +7,9 @@ This innovative controller allows users to control games using their brain signa
 NervCon specifically supports the g.tec Unicorn and it is built as an overlay application, 
 providing a user-friendly and drag-and-drop customizable interface for connecting your mind to the gaming experience.
 
+![Example In Game](presentation/Picture2.gif)
+
+
 ## Features
 
 - **BCI Integration:** NervCon connects effortlessly with g.tec Unicorn, enabling users to control in-game actions through the Unicorn signal processing pipeline.
@@ -14,6 +17,12 @@ providing a user-friendly and drag-and-drop customizable interface for connectin
 - **Customizable Controls:** Tailor the BCI controls to your preferences. Adjust mapping, position and other parameters to create a personalized gaming experience.
 - **Real-time Feedback:** Receive instant feedback on your brain signals, allowing you to refine and optimize your control over time.
 - **User-friendly Interface:** The intuitive interface ensures a smooth and straightforward setup process, making BCI gaming accessible to all users.
+
+## Screenshots
+![Example2](presentation/Picture3.png)
+
+![Example3](presentation/Picture4.png)
+
 
 ## Getting Started
 
